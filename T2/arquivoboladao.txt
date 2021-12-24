@@ -1,0 +1,17 @@
+root("Is it a mammal?").
+
+:- dynamic leftbranch/2.
+leftbranch("Is it a mammal?", "Does it have stripes?").
+leftbranch("Is it a bird?", "Does it fly?").
+
+:- dynamic leftleaf/2.
+leftleaf("Does it have stripes?", "Is it a zebra?").
+leftleaf("Does it fly?", "Is it an eaglew").
+
+:- dynamic rightbranch/2.
+rightbranch("Is it a mammal?", "Is it a bird?").
+
+:- dynamic rightleaf/2.
+rightleaf("Does it have stripes?", "Is it a lion?").
+rightleaf("Does it fly?", "Is it a penguin?").
+rightleaf("Is it a bird?", "Is it a lizzard?").
